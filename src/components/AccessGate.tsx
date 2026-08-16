@@ -169,10 +169,6 @@ export default function AccessGate({ sectionName, onUnlock }: AccessGateProps) {
               )}
             </button>
           </form>
-
-          <div className="text-center pt-4 border-t border-brand-pink/20 flex flex-col sm:flex-row items-center justify-between text-[10px] font-mono text-brand-wine/60 gap-4">
-            <span>🔒 256-Bit Datendatei gesichert über Firestore</span>
-          </div>
         </div>
       </div>
     </div>
