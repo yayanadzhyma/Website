@@ -1,0 +1,31 @@
+{
+  "entities": {
+    "visitor": {
+      "title": "Visitor",
+      "description": "Information about a visitor who unlocked the portfolio",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Name or company of the visitor"
+        },
+        "password": {
+          "type": "string",
+          "description": "Access password entered by the visitor"
+        },
+        "unlockedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp when the visitor requested access to locked sections"
+        }
+      },
+      "required": ["name", "password", "unlockedAt"]
+    }
+  },
+  "firestore": {
+    "visitors/{visitorId}": {
+      "schema": "visitor",
+      "description": "Collection of visitor credentials who unlocked the portfolio"
+    }
+  }
+}

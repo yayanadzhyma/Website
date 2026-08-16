@@ -1,0 +1,35 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Default Catch-All Deny
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Helper Functions
+    function isValidId(id) {
+      return id is string && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    function incoming() {
+      return request.resource.data;
+    }
+
+    // Visitors collection - anyone can create a record, but only with valid schema
+    match /visitors/{visitorId} {
+      allow create: if isValidId(visitorId)
+        && incoming().keys().hasAll(['name', 'password', 'unlockedAt'])
+        && incoming().keys().size() == 3
+        && incoming().name is string
+        && incoming().name.size() > 0
+        && incoming().name.size() <= 128
+        && incoming().password is string
+        && incoming().password.size() > 0
+        && incoming().password.size() <= 128
+        && incoming().unlockedAt == request.time;
+      
+      // Allow read so that the portfolio admin view can read history records
+      allow read: if true;
+    }
+  }
+}
