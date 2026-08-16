@@ -126,7 +126,6 @@ export default function AccessGate({ sectionName, onUnlock }: AccessGateProps) {
                 </span>
                 <input
                   type={showPassword ? 'text' : 'password'}
-                  placeholder="z. B. yana2026"
                   value={visitorPassword}
                   onChange={(e) => setVisitorPassword(e.target.value)}
                   className="w-full pl-10 pr-12 py-3 rounded-xl bg-brand-cream border border-brand-pink/35 text-brand-dark text-sm font-sans focus:outline-hidden focus:border-brand-sage transition-colors placeholder:text-brand-dark/35"
