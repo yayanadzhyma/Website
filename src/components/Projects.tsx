@@ -286,6 +286,49 @@ export default function Projects() {
                 {/* Clean Project Media & Technical Documentation Section */}
                 <div className="border-t border-brand-pink/30 pt-8" id="project-showcase">
 
+                {/* 1. Dreesify Video */}
+                  {activeProjDetails.id === 'dreesify' && (
+                    <div className="p-6 rounded-2xl bg-brand-beige/40 border border-brand-pink/30 space-y-6 text-brand-wine">
+                      <div className="flex justify-between items-center pb-4 border-b border-brand-pink/20">
+                        <div>
+                          <h4 className="font-display font-bold text-sm text-brand-wine">Dreesify App Video</h4>
+                          <p className="text-[10px] text-brand-wine/70 font-mono">Digitale Kleiderschrankverwaltung &amp; Wetter-Outfit-Empfehlungen (Mobile Format)</p>
+                        </div>
+                        <span className="px-2.5 py-0.5 bg-brand-pink/10 border border-brand-pink/20 text-brand-wine font-mono text-[9px] uppercase tracking-widest rounded-full font-bold">
+                          REACT NATIVE & EXPO
+                        </span>
+                      </div>
+
+                      {/* Phone / Mobile Video Layout */}
+                      <div className="flex justify-center items-center p-4 sm:p-6 bg-black/5 rounded-2xl border border-brand-pink/20">
+                        <div className="relative w-full max-w-[280px] sm:max-w-[320px] aspect-[8/16] rounded-[2.5rem] overflow-hidden border-[6px] border-brand-wine/30 bg-black shadow-2xl">
+                          <video
+                            ref={dreesifyVideoRef}
+                            src={dreesifyVideo}
+                            loop
+                            playsInline
+                            controls
+                            onClick={toggleDreesifyVideo}
+                            onPlay={() => setIsDreesifyPlaying(true)}
+                            onPause={() => setIsDreesifyPlaying(false)}
+                          />
+                          {!isDreesifyPlaying && (
+                            <button
+                              type="button"
+                              onClick={toggleDreesifyVideo}
+                              className="absolute inset-0 m-auto w-16 h-16 rounded-full bg-brand-wine/85 text-brand-cream border-2 border-brand-pink/30 flex items-center justify-center shadow-2xl backdrop-blur-sm hover:scale-110 transition-all cursor-pointer z-10"
+                              aria-label="Play video"
+                            >
+                              <Play className="w-8 h-8 fill-brand-cream ml-1" />
+                            </button>
+                          )}
+                        </div>
+                      </div>
+                      <div className="text-[9px] font-mono text-center text-brand-wine/60">
+                        https://gitlab.com/Kitt26/projektwoche_dressify
+                      </div>
+                    </div>
+                  )}
                   {/* 1. URL-Shortener (Modul 210) */}
                   {activeProjDetails.id === 'url_shortener' && (
                     <div className="p-6 rounded-2xl bg-brand-beige/40 border border-brand-pink/30 space-y-6 text-brand-wine">
@@ -440,46 +483,26 @@ export default function Projects() {
                     </div>
                   )}
 
-                  {/* 7. Dreesify Video */}
-                  {activeProjDetails.id === 'dreesify' && (
+                  {/* 7. URL-Shortener (Modul 210) */}
+                  {activeProjDetails.id === 'url_shortener' && (
                     <div className="p-6 rounded-2xl bg-brand-beige/40 border border-brand-pink/30 space-y-6 text-brand-wine">
                       <div className="flex justify-between items-center pb-4 border-b border-brand-pink/20">
                         <div>
-                          <h4 className="font-display font-bold text-sm text-brand-wine">Dreesify App Video</h4>
-                          <p className="text-[10px] text-brand-wine/70 font-mono">Digitale Kleiderschrankverwaltung &amp; Wetter-Outfit-Empfehlungen (Mobile Format)</p>
+                          <h4 className="font-display font-bold text-sm sm:text-base text-brand-wine">URL-Shortener (Modul 210) Screenshot</h4>
+                          <p className="text-[10px] text-brand-wine/70 font-mono">DevOps-Cockpit (ArgoCD &amp; GitLab CI Continuous Delivery Pipeline)</p>
                         </div>
-                        <span className="px-2.5 py-0.5 bg-brand-pink/10 border border-brand-pink/20 text-brand-wine font-mono text-[9px] uppercase tracking-widest rounded-full font-bold">
-                          REACT NATIVE & EXPO
+                        <span className="px-2.5 py-0.5 bg-brand-wine/10 border border-brand-pink/25 text-brand-wine font-mono text-[9px] uppercase tracking-widest rounded-full font-bold">
+                          GITLAB CI & ARGOCD
                         </span>
                       </div>
 
-                      {/* Phone / Mobile Video Layout */}
-                      <div className="flex justify-center items-center p-4 sm:p-6 bg-black/5 rounded-2xl border border-brand-pink/20">
-                        <div className="relative w-full max-w-[280px] sm:max-w-[320px] aspect-[8/16] rounded-[2.5rem] overflow-hidden border-[6px] border-brand-wine/30 bg-black shadow-2xl">
-                          <video
-                            ref={dreesifyVideoRef}
-                            src={dreesifyVideo}
-                            loop
-                            playsInline
-                            controls
-                            onClick={toggleDreesifyVideo}
-                            onPlay={() => setIsDreesifyPlaying(true)}
-                            onPause={() => setIsDreesifyPlaying(false)}
-                          />
-                          {!isDreesifyPlaying && (
-                            <button
-                              type="button"
-                              onClick={toggleDreesifyVideo}
-                              className="absolute inset-0 m-auto w-16 h-16 rounded-full bg-brand-wine/85 text-brand-cream border-2 border-brand-pink/30 flex items-center justify-center shadow-2xl backdrop-blur-sm hover:scale-110 transition-all cursor-pointer z-10"
-                              aria-label="Play video"
-                            >
-                              <Play className="w-8 h-8 fill-brand-cream ml-1" />
-                            </button>
-                          )}
-                        </div>
-                      </div>
-                      <div className="text-[9px] font-mono text-center text-brand-wine/60">
-                        https://gitlab.com/Kitt26/projektwoche_dressify
+                      <div className="rounded-2xl overflow-hidden border border-brand-pink/20 shadow-sm bg-black/5">
+                        <img 
+                          src={urlShortenerImg} 
+                          alt="URL-Shortener GitOps Dashboard Screenshot" 
+                          className="w-full h-auto object-cover block"
+                          referrerPolicy="no-referrer"
+                        />
                       </div>
                     </div>
                   )}
