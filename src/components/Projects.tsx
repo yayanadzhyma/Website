@@ -367,7 +367,7 @@ export default function Projects() {
                       <div className="flex justify-between items-center pb-4 border-b border-brand-pink/20">
                         <div>
                           <h4 className="font-display font-bold text-sm text-brand-wine">C# Windows Forms Projekt</h4>
-                          <p className="text-[10px] text-brand-wine/70 font-mono">bwd / gibb Schulprojekt</p>
+                          <p className="text-[10px] text-brand-wine/70 font-mono">einfaches 2048 Spiel</p>
                         </div>
                         <span className="px-2.5 py-0.5 bg-brand-wine/10 border border-brand-pink/25 text-brand-wine font-mono text-[9px] uppercase tracking-widest rounded-full font-bold">
                           C# & WINDOWS FORMS
@@ -391,7 +391,7 @@ export default function Projects() {
                       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center pb-4 border-b border-brand-pink/20 gap-4">
                         <div>
                           <h4 className="font-display font-bold text-sm text-brand-wine">Relationales SQL-Datenbankschema</h4>
-                          <p className="text-[10px] text-brand-wine/70 font-mono">Modul 164 Relationale Datenbanken — Pasta Restaurant</p>
+                          <p className="text-[10px] text-brand-wine/70 font-mono">Relationale Datenbanken</p>
                         </div>
                         <span className="px-2.5 py-0.5 bg-brand-wine/10 border border-brand-pink/20 text-brand-wine font-mono text-[9px] uppercase tracking-widest rounded-full font-bold">
                             SQLITE3 & ERD
@@ -445,7 +445,7 @@ export default function Projects() {
                     <div className="p-6 rounded-2xl bg-brand-beige/40 border border-brand-pink/30 space-y-6 text-brand-wine">
                       <div className="flex justify-between items-center pb-4 border-b border-brand-pink/20">
                         <div>
-                          <h4 className="font-display font-bold text-sm text-brand-wine">Dreesify App Video (Modulabschluss)</h4>
+                          <h4 className="font-display font-bold text-sm text-brand-wine">Dreesify App Video</h4>
                           <p className="text-[10px] text-brand-wine/70 font-mono">Digitale Kleiderschrankverwaltung &amp; Wetter-Outfit-Empfehlungen (Mobile Format)</p>
                         </div>
                         <span className="px-2.5 py-0.5 bg-brand-pink/10 border border-brand-pink/20 text-brand-wine font-mono text-[9px] uppercase tracking-widest rounded-full font-bold">
@@ -489,8 +489,8 @@ export default function Projects() {
                     <div className="p-6 rounded-2xl bg-brand-beige/40 border border-brand-pink/30 space-y-6 text-brand-wine">
                       <div className="flex justify-between items-center pb-4 border-b border-brand-pink/20">
                         <div>
-                          <h4 className="font-display font-bold text-sm text-brand-wine">.NET MAUI App Video (Modul 152)</h4>
-                          <p className="text-[10px] text-brand-wine/70 font-mono">C# &amp; XAML (.NET MAUI MVVM Desktop &amp; Tablet GUI)</p>
+                          <h4 className="font-display font-bold text-sm text-brand-wine">.NET MAUI App Video</h4>
+                          <p className="text-[10px] text-brand-wine/70 font-mono">.NET MAUI MVVM Desktop &amp; Tablet GUI Applikation</p>
                         </div>
                         <span className="px-2.5 py-0.5 bg-brand-wine/10 border border-brand-pink/25 text-brand-wine font-mono text-[9px] uppercase tracking-widest rounded-full font-bold">
                           C# & .NET MAUI
@@ -571,7 +571,7 @@ export default function Projects() {
                         <div>
                           <h4 className="font-display font-bold text-sm text-brand-wine">Webauftritt Portfolio Video (Modul 293)</h4>
                           <p className="text-[10px] text-brand-wine/70 font-mono">
-                            Dreiteiliges Schulprojekt // Rezept-Blog, Terra Verde & Yana's Health (Bestnote 6.0)
+                            Dreiteiliges Schulprojekt // Website für Rezept-Blog, Website für ein Restaurant & Health Center
                           </p>
                         </div>
                         <span className="px-2.5 py-0.5 bg-brand-pink/10 border border-brand-pink/20 text-brand-wine font-mono text-[9px] uppercase tracking-widest rounded-full font-bold">
@@ -629,7 +629,7 @@ export default function Projects() {
                       <div className="flex justify-between items-center pb-4 border-b border-brand-pink/20">
                         <div>
                           <h4 className="font-display font-bold text-sm text-brand-wine">Evently Mobile App Video (Modul 335)</h4>
-                          <p className="text-[10px] text-brand-wine/70 font-mono">ICT-LearnFactory AG Teamprojekt // React Native &amp; Firebase iOS App (Mobile Format)</p>
+                          <p className="text-[10px] text-brand-wine/70 font-mono">React Native &amp; Firebase iOS App (Mobile Format)</p>
                         </div>
                         <span className="px-2.5 py-0.5 bg-brand-pink/10 border border-brand-pink/20 text-brand-wine font-mono text-[9px] uppercase tracking-widest rounded-full font-bold">
                           REACT NATIVE & FIREBASE

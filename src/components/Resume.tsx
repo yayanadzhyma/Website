@@ -129,22 +129,6 @@ export default function Resume() {
                   <p className="text-xs sm:text-sm text-brand-dark/85 mt-4 leading-relaxed font-normal">
                     {event.description}
                   </p>
-
-                  {/* Skill association footer tags */}
-                  {event.type === 'education' && event.organization.includes('bwd') && (
-                    <div className="flex gap-2 flex-wrap mt-4 pt-4 border-t border-brand-pink/20">
-                      <span className="text-[10px] font-mono bg-brand-wine/5 text-brand-wine px-2 py-0.5 rounded">#KaufmannBerufsmatura</span>
-                      <span className="text-[10px] font-mono bg-brand-wine/5 text-brand-wine px-2 py-0.5 rounded">#Wirtschaftslehre</span>
-                      <span className="text-[10px] font-mono bg-brand-wine/5 text-brand-wine px-2 py-0.5 rounded">#NotenSchnitt_5.4</span>
-                    </div>
-                  )}
-                  {event.type === 'education' && event.organization.includes('gibb') && (
-                    <div className="flex gap-2 flex-wrap mt-4 pt-4 border-t border-brand-pink/20">
-                      <span className="text-[10px] font-mono bg-brand-sage/10 text-brand-sage px-2 py-0.5 rounded">#ApplikaEntwicklung</span>
-                      <span className="text-[10px] font-mono bg-brand-sage/10 text-brand-sage px-2 py-0.5 rounded">#Webtechnologien</span>
-                      <span className="text-[10px] font-mono bg-brand-sage/10 text-brand-sage px-2 py-0.5 rounded">#DatenbankSchema</span>
-                    </div>
-                  )}
                 </div>
               </motion.div>
             ))}
