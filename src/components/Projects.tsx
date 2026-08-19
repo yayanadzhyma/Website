@@ -27,7 +27,7 @@ import mauiVideo from '/speisekarte.mp4'
 export default function Projects() {
   const { t } = useLanguage();
   const [activeTab, setActiveTab] = useState<'all' | 'school' | 'private'>('all');
-  const [selectedProject, setSelectedProject] = useState<string>('url_shortener');
+  const [selectedProject, setSelectedProject] = useState<string>('website');
 
   // Video player state for video-based project showcases
   const [isDreesifyPlaying, setIsDreesifyPlaying] = useState<boolean>(false);
