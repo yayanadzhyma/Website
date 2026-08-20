@@ -556,9 +556,6 @@ export default function Projects() {
                         <span className="px-2.5 py-0.5 bg-brand-wine/10 border border-brand-pink/20 text-brand-wine font-mono text-[9px] uppercase tracking-widest rounded-full font-bold">
                           REACT & POCKETBASE
                         </span>
-                        <div className="text-[9px] font-mono text-center text-brand-wine/60">
-                        https://github.com/yayanadzhyma/Matcha-After-Dark
-                      </div>
                       </div>
 
                       <div className="rounded-2xl overflow-hidden border border-brand-pink/20 shadow-sm bg-black/5">
@@ -568,6 +565,9 @@ export default function Projects() {
                           className="w-full h-auto object-cover block"
                           referrerPolicy="no-referrer"
                         />
+                      </div>
+                        <div className="text-[9px] font-mono text-center text-brand-wine/60">
+                        https://github.com/yayanadzhyma/Matcha-After-Dark
                       </div>
                     </div>
                   )}
@@ -660,9 +660,6 @@ export default function Projects() {
                         <span className="px-2.5 py-0.5 bg-brand-pink/10 border border-brand-pink/20 text-brand-wine font-mono text-[9px] uppercase tracking-widest rounded-full font-bold">
                           REACT NATIVE & FIREBASE
                         </span>
-                        <div className="text-[9px] font-mono text-center text-brand-wine/60">
-                        https://github.com/yayanadzhyma/Evently
-                      </div>
                       </div>
 
                       {/* Phone / Mobile Video Layout */}
@@ -688,6 +685,9 @@ export default function Projects() {
                             </button>
                           )}
                         </div>
+                      </div>
+                        <div className="text-[9px] font-mono text-center text-brand-wine/60">
+                        https://github.com/yayanadzhyma/Evently
                       </div>
                     </div>
                   )}
