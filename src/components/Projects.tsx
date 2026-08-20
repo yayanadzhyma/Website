@@ -324,9 +324,9 @@ export default function Projects() {
                           )}
                         </div>
                       </div>
-                      <link className="text-[9px] font-mono text-center text-brand-wine/60">
+                      <div className="text-[9px] font-mono text-center text-brand-wine/60">
                         https://gitlab.com/Kitt26/projektwoche_dressify
-                      </link>
+                      </div>
                     </div>
                   )}
                   {/* 1. URL-Shortener (Modul 210) */}
@@ -398,9 +398,9 @@ export default function Projects() {
                           referrerPolicy="no-referrer"
                         />
                       </div>
-                      <link className="text-[9px] font-mono text-center text-brand-wine/60">
+                      <div className="text-[9px] font-mono text-center text-brand-wine/60">
                         http://imsbern.ch/ims2024/dzhyma/
-                      </link>
+                      </div>
                     </div>
                   )}
 
@@ -556,9 +556,9 @@ export default function Projects() {
                         <span className="px-2.5 py-0.5 bg-brand-wine/10 border border-brand-pink/20 text-brand-wine font-mono text-[9px] uppercase tracking-widest rounded-full font-bold">
                           REACT & POCKETBASE
                         </span>
-                        <link className="text-[9px] font-mono text-center text-brand-wine/60">
+                        <div className="text-[9px] font-mono text-center text-brand-wine/60">
                         https://github.com/yayanadzhyma/Matcha-After-Dark
-                      </link>
+                      </div>
                       </div>
 
                       <div className="rounded-2xl overflow-hidden border border-brand-pink/20 shadow-sm bg-black/5">
@@ -660,9 +660,9 @@ export default function Projects() {
                         <span className="px-2.5 py-0.5 bg-brand-pink/10 border border-brand-pink/20 text-brand-wine font-mono text-[9px] uppercase tracking-widest rounded-full font-bold">
                           REACT NATIVE & FIREBASE
                         </span>
-                        <link className="text-[9px] font-mono text-center text-brand-wine/60">
+                        <div className="text-[9px] font-mono text-center text-brand-wine/60">
                         https://github.com/yayanadzhyma/Evently
-                      </link>
+                      </div>
                       </div>
 
                       {/* Phone / Mobile Video Layout */}
