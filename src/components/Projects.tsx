@@ -324,31 +324,8 @@ export default function Projects() {
                           )}
                         </div>
                       </div>
-                      <div className="text-[9px] font-mono text-center text-brand-wine/60">
+                      <div className="text-[14px] font-mono text-center text-brand-wine/60">
                         https://gitlab.com/Kitt26/projektwoche_dressify
-                      </div>
-                    </div>
-                  )}
-                  {/* 1. URL-Shortener (Modul 210) */}
-                  {activeProjDetails.id === 'url_shortener' && (
-                    <div className="p-6 rounded-2xl bg-brand-beige/40 border border-brand-pink/30 space-y-6 text-brand-wine">
-                      <div className="flex justify-between items-center pb-4 border-b border-brand-pink/20">
-                        <div>
-                          <h4 className="font-display font-bold text-sm sm:text-base text-brand-wine">URL-Shortener (Modul 210) Screenshot</h4>
-                          <p className="text-[10px] text-brand-wine/70 font-mono">DevOps-Cockpit (ArgoCD &amp; GitLab CI Continuous Delivery Pipeline)</p>
-                        </div>
-                        <span className="px-2.5 py-0.5 bg-brand-wine/10 border border-brand-pink/25 text-brand-wine font-mono text-[9px] uppercase tracking-widest rounded-full font-bold">
-                          GITLAB CI & ARGOCD
-                        </span>
-                      </div>
-
-                      <div className="rounded-2xl overflow-hidden border border-brand-pink/20 shadow-sm bg-black/5">
-                        <img 
-                          src={urlShortenerImg} 
-                          alt="URL-Shortener GitOps Dashboard Screenshot" 
-                          className="w-full h-auto object-cover block"
-                          referrerPolicy="no-referrer"
-                        />
                       </div>
                     </div>
                   )}
@@ -398,7 +375,7 @@ export default function Projects() {
                           referrerPolicy="no-referrer"
                         />
                       </div>
-                      <div className="text-[9px] font-mono text-center text-brand-wine/60">
+                      <div className="text-[14px] font-mono text-center text-brand-wine/60">
                         http://imsbern.ch/ims2024/dzhyma/
                       </div>
                     </div>
@@ -566,7 +543,7 @@ export default function Projects() {
                           referrerPolicy="no-referrer"
                         />
                       </div>
-                        <div className="text-[9px] font-mono text-center text-brand-wine/60">
+                        <div className="text-[14px] font-mono text-center text-brand-wine/60">
                         https://github.com/yayanadzhyma/Matcha-After-Dark
                       </div>
                     </div>
@@ -686,7 +663,7 @@ export default function Projects() {
                           )}
                         </div>
                       </div>
-                        <div className="text-[9px] font-mono text-center text-brand-wine/60">
+                        <div className="text-[14px] font-mono text-center text-brand-wine/60">
                         https://github.com/yayanadzhyma/Evently
                       </div>
                     </div>
