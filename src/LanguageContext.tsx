@@ -58,6 +58,12 @@ export interface TranslationDictionary {
     filterEducation: string;
     filterExperience: string;
     certText: string;
+    downloadSectionTitle: string;
+    downloadSectionDesc: string;
+    cvDownloadBtn: string;
+    cvDownloadSub: string;
+    workRefBtn: string;
+    workRefSub: string;
     timeline: TimelineEvent[];
   };
   skills: {
@@ -173,6 +179,12 @@ export interface TranslationDictionary {
     noteDesc3: string;
     noteDescOther: string;
     gibbPass: string;
+    downloadTitle: string;
+    downloadDesc: string;
+    bwdDownloadBtn: string;
+    bwdDownloadSub: string;
+    gibbDownloadBtn: string;
+    gibbDownloadSub: string;
     subjects: {
       deutsch: string;
       franz: string;
@@ -263,13 +275,19 @@ const translations: Record<Language, TranslationDictionary> = {
       videoSubtitle: 'Vorstellungsvideo • Play',
       modalTitle: 'Vorstellungsvideo — Yana Dzhyma',
      },
-    resume: {
+   resume: {
       title: 'Lebenslauf',
       desc: 'Erfahren Sie mehr über meine akademische Laufbahn an der bwd Bern, ICT-LearnFactory und gibb Bern, sowie über meine Sprachen & Interessen. Sortieren Sie die Abschnitte für einen individuellen Fokus.',
       filterAll: 'Alle anzeigen',
       filterEducation: 'Ausbildung',
       filterExperience: 'Nebenjobs & Integration',
       certText: 'Vollständigkeits-Zertifikat: Alle Altersstufen, Schulabschnitte und Nebenjobs sind deckungsgenau erfasst.',
+      downloadSectionTitle: 'Offizielle Dokumente & Nachweise zum Download',
+      downloadSectionDesc: 'Hier können Sie meinen vollständigen Lebenslauf sowie offizielle Arbeitsbestätigungen als PDF-Dateien herunterladen.',
+      cvDownloadBtn: 'Lebenslauf herunterladen',
+      cvDownloadSub: 'Aktueller tabellarischer CV mit Ausbildungs- & IT-Profil',
+      workRefBtn: 'Arbeitsbestätigung Jugend-Job-Börse',
+      workRefSub: 'Offizielles Arbeitszeugnis & Leistungsnachweis',
       timeline: [
         {
           year: 'Seit Aug 2024',
@@ -769,6 +787,12 @@ const translations: Record<Language, TranslationDictionary> = {
       noteDesc3: 'Als Informatikmittelschülerin (IMS) lerne ich an zwei eigenständigen Institutionen. Die Noten entsprechen dem aktuellen, offiziellen Stand gemäss bwd- und gibb-Direktion.',
       noteDescOther: 'Die ausgewiesenen Werte basieren auf den offiziellen Zeugnissen des Bildungszentrums für Wirtschaft und Herkunftsschule bwd/gibb Bern.',
       gibbPass: 'Promoviert',
+      downloadTitle: 'Offizielle Zeugnisse & Notenausweise zum Download',
+      downloadDesc: 'Laden Sie die verifizierten PDF-Zeugnisdokumente der beiden Ausbildungsinstitutionen herunter.',
+      bwdDownloadBtn: 'bwd Zeugnis ',
+      bwdDownloadSub: 'Wirtschaft & Berufsmaturität (bwd Bern)',
+      gibbDownloadBtn: 'gibb Zeugnis',
+      gibbDownloadSub: 'Informatik-Modulnoten & ÜK-Nachweise (gibb Bern)',
       subjects: {
         deutsch: 'Deutsch',
         franz: 'Französisch',
@@ -863,6 +887,12 @@ const translations: Record<Language, TranslationDictionary> = {
       filterEducation: 'Education',
       filterExperience: 'Part-time Jobs & Integration',
       certText: 'Chronology Certificate: All ages, school cycles, and part-time jobs are chronologically and seamlessly logged.',
+      downloadSectionTitle: 'Official Documents & Verified References for Download',
+      downloadSectionDesc: 'Download my complete resume (CV) and official work certificates directly as PDF files.',
+      cvDownloadBtn: 'Download Resume / CV',
+      cvDownloadSub: 'Up-to-date CV covering academic career and development profile',
+      workRefBtn: 'Work Reference Letter',
+      workRefSub: 'Official reference letter from Jugend-Job-Börse Bern',
       timeline: [
         {
           year: 'Since Aug 2024',
@@ -1362,6 +1392,12 @@ const translations: Record<Language, TranslationDictionary> = {
       noteDesc3: 'As an active dual-enrollment student (IMS), I qualify in major academic registers simultaneously. All transcript data reflects official registries.',
       noteDescOther: 'All values listed are derived from certified school logs hosted at bwd and gibb Bern.',
       gibbPass: 'Promoted',
+      downloadTitle: 'Official Transcripts & Report Cards for Download',
+      downloadDesc: 'Download the verified PDF transcript documents from both academic institutions.',
+      bwdDownloadBtn: 'bwd Grades',
+      bwdDownloadSub: 'Economics & Vocational Baccalaureate (bwd Bern)',
+      gibbDownloadBtn: 'gibb Grades',
+      gibbDownloadSub: 'Vocational IT Modules & ÜK Certificates (gibb Bern)',
       subjects: {
         deutsch: 'German',
         franz: 'French',

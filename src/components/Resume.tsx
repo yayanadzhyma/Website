@@ -142,6 +142,84 @@ export default function Resume() {
           </p>
         </div>
       </div>
+              {/* Official Document Downloads Section (Placed at the end of the Resume page) */}
+        <div className="mt-12 p-6 sm:p-8 rounded-3xl bg-brand-beige/25 border border-brand-pink/30 shadow-sm">
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+            <div>
+              <div className="flex items-center gap-2 text-brand-wine">
+                <FileText className="w-5 h-5 text-brand-sage" />
+                <h3 className="font-serif font-bold text-lg sm:text-xl">
+                  {t.resume.downloadSectionTitle}
+                </h3>
+              </div>
+              <p className="text-xs sm:text-sm text-brand-dark/75 font-sans mt-1">
+                {t.resume.downloadSectionDesc}
+              </p>
+            </div>
+            <span className="self-start md:self-auto text-[11px] font-mono text-brand-wine bg-brand-pink/25 px-3 py-1 rounded-full font-semibold border border-brand-pink/30">
+              PDF-Format • A4
+            </span>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {/* 1. Lebenslauf PDF */}
+            <a
+              href="/lebenslauf.pdf"
+              download="lebenslauf.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group p-5 rounded-2xl bg-brand-cream border border-brand-pink/25 hover:border-brand-wine/40 shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between"
+            >
+              <div>
+                <div className="flex items-center justify-between text-brand-wine mb-3">
+                  <div className="w-9 h-9 rounded-xl bg-brand-wine/10 flex items-center justify-center text-brand-wine group-hover:bg-brand-wine group-hover:text-brand-cream transition-colors">
+                    <FileText className="w-4 h-4" />
+                  </div>
+                  <Download className="w-4 h-4 text-brand-sage group-hover:translate-y-0.5 transition-transform" />
+                </div>
+                <h4 className="font-serif font-bold text-base text-brand-wine group-hover:text-brand-sage transition-colors">
+                  {t.resume.cvDownloadBtn}
+                </h4>
+                <p className="text-xs text-brand-dark/70 font-sans mt-1.5 leading-snug">
+                  {t.resume.cvDownloadSub}
+                </p>
+              </div>
+              <div className="mt-5 pt-3 border-t border-brand-pink/15 flex items-center justify-between text-[11px] font-mono text-brand-wine/80 font-semibold">
+                <span>Lebenslauf_Yana_Dzhyma.pdf</span>
+                <span className="text-brand-sage uppercase">Download ↓</span>
+              </div>
+            </a>
+
+            {/* 2. Arbeitsbestätigung Jugend-Job-Börse PDF */}
+            <a
+              href="/Arbeitsbestaetigung.pdf"
+              download="Arbeitsbestaetigung.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group p-5 rounded-2xl bg-brand-cream border border-brand-pink/25 hover:border-brand-wine/40 shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between"
+            >
+              <div>
+                <div className="flex items-center justify-between text-brand-wine mb-3">
+                  <div className="w-9 h-9 rounded-xl bg-brand-wine/10 flex items-center justify-center text-brand-wine group-hover:bg-brand-wine group-hover:text-brand-cream transition-colors">
+                    <Award className="w-4 h-4" />
+                  </div>
+                  <Download className="w-4 h-4 text-brand-sage group-hover:translate-y-0.5 transition-transform" />
+                </div>
+                <h4 className="font-serif font-bold text-base text-brand-wine group-hover:text-brand-sage transition-colors">
+                  {t.resume.workRefBtn}
+                </h4>
+                <p className="text-xs text-brand-dark/70 font-sans mt-1.5 leading-snug">
+                  {t.resume.workRefSub}
+                </p>
+              </div>
+              <div className="mt-5 pt-3 border-t border-brand-pink/15 flex items-center justify-between text-[11px] font-mono text-brand-wine/80 font-semibold">
+                <span>Arbeitsbestaetigung.pdf</span>
+                <span className="text-brand-sage uppercase">Download ↓</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
