@@ -213,7 +213,7 @@ export default function Resume() {
                 </p>
               </div>
               <div className="mt-5 pt-3 border-t border-brand-pink/15 flex items-center justify-between text-[11px] font-mono text-brand-wine/80 font-semibold">
-                <span>Arbeitsbestaetigung.pdf</span>
+                <span>Arbeitsbestaetigung_Yana_Dzhyma.pdf</span>
                 <span className="text-brand-sage uppercase">Download ↓</span>
               </div>
             </a>
@@ -221,4 +221,4 @@ export default function Resume() {
         </div>
     </section>
   );
-}
+} 
