@@ -4,7 +4,7 @@
  */
 
 import { useState } from 'react';
-import { Calendar, Briefcase, GraduationCap, Users, Heart, ArrowUpRight } from 'lucide-react';
+import { Calendar, Briefcase, GraduationCap, Users, Heart, ArrowUpRight, FileText, Download, Shield, Award, ExternalLink } from 'lucide-react';
 import { TimelineEvent } from '../types';
 import { motion, AnimatePresence } from 'motion/react';
 import { useLanguage } from '../LanguageContext';
@@ -129,6 +129,42 @@ export default function Resume() {
                   <p className="text-xs sm:text-sm text-brand-dark/85 mt-4 leading-relaxed font-normal">
                     {event.description}
                   </p>
+
+                  {/* Optional direct document download attachment */}
+                  {event.documentUrl && (
+                    <div className="mt-4 pt-4 border-t border-brand-pink/20 flex items-center justify-between flex-wrap gap-2">
+                      <span className="text-xs text-brand-dark/75 font-sans font-medium">
+                        {language === 'de' ? 'Offizielles Dokument:' : 'Official document:'}
+                      </span>
+                      <a
+                        href={event.documentUrl}
+                        download={event.documentUrl.split('/').pop()}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-brand-wine text-brand-cream text-xs font-mono font-semibold hover:bg-brand-sage transition-all duration-200 shadow-xs"
+                      >
+                        <FileText className="w-3.5 h-3.5" />
+                        <span>{event.documentLabel || (language === 'de' ? 'Dokument (PDF)' : 'Document (PDF)')}</span>
+                        <Download className="w-3.5 h-3.5 ml-1" />
+                      </a>
+                    </div>
+                  )}
+
+                  {/* Skill association footer tags */}
+                  {event.type === 'education' && event.organization.includes('bwd') && (
+                    <div className="flex gap-2 flex-wrap mt-4 pt-4 border-t border-brand-pink/20">
+                      <span className="text-[10px] font-mono bg-brand-wine/5 text-brand-wine px-2 py-0.5 rounded">#KaufmannBerufsmatura</span>
+                      <span className="text-[10px] font-mono bg-brand-wine/5 text-brand-wine px-2 py-0.5 rounded">#Wirtschaftslehre</span>
+                      <span className="text-[10px] font-mono bg-brand-wine/5 text-brand-wine px-2 py-0.5 rounded">#NotenSchnitt_5.4</span>
+                    </div>
+                  )}
+                  {event.type === 'education' && event.organization.includes('gibb') && (
+                    <div className="flex gap-2 flex-wrap mt-4 pt-4 border-t border-brand-pink/20">
+                      <span className="text-[10px] font-mono bg-brand-sage/10 text-brand-sage px-2 py-0.5 rounded">#ApplikaEntwicklung</span>
+                      <span className="text-[10px] font-mono bg-brand-sage/10 text-brand-sage px-2 py-0.5 rounded">#Webtechnologien</span>
+                      <span className="text-[10px] font-mono bg-brand-sage/10 text-brand-sage px-2 py-0.5 rounded">#DatenbankSchema</span>
+                    </div>
+                  )}
                 </div>
               </motion.div>
             ))}
@@ -141,8 +177,8 @@ export default function Resume() {
             {t.resume.certText}
           </p>
         </div>
-      </div>
-              {/* Official Document Downloads Section (Placed at the end of the Resume page) */}
+
+        {/* Official Document Downloads Section (Placed at the end of the Resume page) */}
         <div className="mt-12 p-6 sm:p-8 rounded-3xl bg-brand-beige/25 border border-brand-pink/30 shadow-sm">
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
             <div>
@@ -164,7 +200,7 @@ export default function Resume() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {/* 1. Lebenslauf PDF */}
             <a
-              href="/lebenslauf.pdf"
+              href="/Lebenslauf_Yana_Dzhyma.pdf"
               download="lebenslauf.pdf"
               target="_blank"
               rel="noopener noreferrer"
@@ -219,6 +255,7 @@ export default function Resume() {
             </a>
           </div>
         </div>
+      </div>
     </section>
   );
-} 
+}
