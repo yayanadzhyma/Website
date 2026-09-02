@@ -200,7 +200,7 @@ export default function Resume() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {/* 1. Lebenslauf PDF */}
             <a
-              href="/Lebenslauf_Yana_Dzhyma.pdf"
+              href="/lebenslauf.pdf"
               download="lebenslauf.pdf"
               target="_blank"
               rel="noopener noreferrer"
