@@ -5,7 +5,7 @@
 
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Award, BookOpen, Calendar, Clock, TrendingUp, Building2, User, Check, ExternalLink, Download, FileText } from 'lucide-react';
+import { Award, BookOpen, Calendar, Clock, TrendingUp, Building2, User, Check, ExternalLink, Download, FileText, GraduationCap  } from 'lucide-react';
 import { useLanguage } from '../LanguageContext';
 
 interface SchoolGrade {
@@ -460,9 +460,8 @@ export default function TeacherEvaluation() {
               </div>
             </motion.div>
           </AnimatePresence>
-        </div>
-      </div>
-      {/* Official Certificates Download Section (2 Transcripts: bwd & gibb) */}
+        
+          {/* Official Certificates Download Section */}
           <div className="mt-12 p-6 sm:p-8 rounded-3xl bg-brand-beige/25 border border-brand-pink/30 shadow-sm">
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
               <div>
@@ -477,15 +476,71 @@ export default function TeacherEvaluation() {
                 </p>
               </div>
               <span className="self-start md:self-auto text-[11px] font-mono text-brand-wine bg-brand-pink/25 px-3 py-1 rounded-full font-semibold border border-brand-pink/30">
-                Offizielle Nachweise • PDF
+                Offizielle Nachweise im PDF-Format
               </span>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {/* 1. bwd Semesterzeugnis / Notenausweis */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {/* 1. Lebenslauf */}
+              <a
+                href="/lebenslauf.pdf"
+                download="Lebenslauf_Yana_Dzhyma.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group p-5 rounded-2xl bg-brand-cream border border-brand-pink/25 hover:border-brand-wine/40 shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between"
+              >
+                <div>
+                  <div className="flex items-center justify-between text-brand-wine mb-3">
+                    <div className="w-9 h-9 rounded-xl bg-brand-wine/10 flex items-center justify-center text-brand-wine group-hover:bg-brand-wine group-hover:text-brand-cream transition-colors">
+                      <FileText className="w-4 h-4" />
+                    </div>
+                    <Download className="w-4 h-4 text-brand-sage group-hover:translate-y-0.5 transition-transform" />
+                  </div>
+                  <h4 className="font-serif font-bold text-base text-brand-wine group-hover:text-brand-sage transition-colors">
+                    {t.teacherEvaluation.cvDownloadBtn}
+                  </h4>
+                  <p className="text-xs text-brand-dark/70 font-sans mt-1.5 leading-snug">
+                    {t.teacherEvaluation.cvDownloadSub}
+                  </p>
+                </div>
+                <div className="mt-5 pt-3 border-t border-brand-pink/15 flex items-center justify-between text-[11px] font-mono text-brand-wine/80 font-semibold">
+                  <span>Lebenslauf_Yana_Dzhyma.pdf</span>
+                  <span className="text-brand-sage uppercase">Download</span>
+                </div>
+              </a>
+
+              {/* 2. Arbeitsbestätigung Jugend-Job-Börse */}
+              <a
+                href="/Arbeitsbestaetigung.pdf"
+                download="Arbeitsbestaetigung_JJBB_Yana_Dzhyma.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group p-5 rounded-2xl bg-brand-cream border border-brand-pink/25 hover:border-brand-wine/40 shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between"
+              >
+                <div>
+                  <div className="flex items-center justify-between text-brand-wine mb-3">
+                    <div className="w-9 h-9 rounded-xl bg-brand-wine/10 flex items-center justify-center text-brand-wine group-hover:bg-brand-wine group-hover:text-brand-cream transition-colors">
+                      <Award className="w-4 h-4" />
+                    </div>
+                    <Download className="w-4 h-4 text-brand-sage group-hover:translate-y-0.5 transition-transform" />
+                  </div>
+                  <h4 className="font-serif font-bold text-base text-brand-wine group-hover:text-brand-sage transition-colors">
+                    {t.teacherEvaluation.workRefBtn}
+                  </h4>
+                  <p className="text-xs text-brand-dark/70 font-sans mt-1.5 leading-snug">
+                    {t.teacherEvaluation.workRefSub}
+                  </p>
+                </div>
+                <div className="mt-5 pt-3 border-t border-brand-pink/15 flex items-center justify-between text-[11px] font-mono text-brand-wine/80 font-semibold">
+                  <span>Arbeitsbestaetigung.pdf</span>
+                  <span className="text-brand-sage uppercase">Download</span>
+                </div>
+              </a>
+
+              {/* 3. bwd Semesterzeugnis / Notenausweis */}
               <a
                 href="/bwd_Zeugnis.pdf"
-                download="bwd_Zeugnis.pdf"
+                download="bwd_Zeugnis_Yana_Dzhyma.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group p-5 rounded-2xl bg-brand-cream border border-brand-pink/25 hover:border-brand-wine/40 shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between"
@@ -506,14 +561,14 @@ export default function TeacherEvaluation() {
                 </div>
                 <div className="mt-5 pt-3 border-t border-brand-pink/15 flex items-center justify-between text-[11px] font-mono text-brand-wine/80 font-semibold">
                   <span>bwd_Zeugnis.pdf</span>
-                  <span className="text-brand-sage uppercase">Download ↓</span>
+                  <span className="text-brand-sage uppercase">Download</span>
                 </div>
               </a>
 
-              {/* 2. gibb Notenausweis Informatik */}
+              {/* 4. gibb Notenausweis Informatik */}
               <a
                 href="/gibb_Zeugnis.pdf"
-                download="gibb_Zeugnis.pdf"
+                download="gibb_Zeugnis_Yana_Dzhyma.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group p-5 rounded-2xl bg-brand-cream border border-brand-pink/25 hover:border-brand-wine/40 shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between"
@@ -534,11 +589,42 @@ export default function TeacherEvaluation() {
                 </div>
                 <div className="mt-5 pt-3 border-t border-brand-pink/15 flex items-center justify-between text-[11px] font-mono text-brand-wine/80 font-semibold">
                   <span>gibb_Zeugnis.pdf</span>
-                  <span className="text-brand-sage uppercase">Download ↓</span>
+                  <span className="text-brand-sage uppercase">Download</span>
+                </div>
+              </a>
+
+              {/* 5. ÜK-Kompetenznachweise */}
+              <a
+                href="/UEK_Kompetenzen.pdf"
+                download="UEK_Kompetenzen.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group p-5 rounded-2xl bg-brand-cream border border-brand-pink/25 hover:border-brand-wine/40 shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between"
+              >
+                <div>
+                  <div className="flex items-center justify-between text-brand-wine mb-3">
+                    <div className="w-9 h-9 rounded-xl bg-brand-wine/10 flex items-center justify-center text-brand-wine group-hover:bg-brand-wine group-hover:text-brand-cream transition-colors">
+                      <GraduationCap className="w-4 h-4" />
+                    </div>
+                    <Download className="w-4 h-4 text-brand-sage group-hover:translate-y-0.5 transition-transform" />
+                  </div>
+                  <h4 className="font-serif font-bold text-base text-brand-wine group-hover:text-brand-sage transition-colors">
+                    {t.teacherEvaluation.uekDownloadBtn}
+                  </h4>
+                  <p className="text-xs text-brand-dark/70 font-sans mt-1.5 leading-snug">
+                    {t.teacherEvaluation.uekDownloadSub}
+                  </p>
+                </div>
+                <div className="mt-5 pt-3 border-t border-brand-pink/15 flex items-center justify-between text-[11px] font-mono text-brand-wine/80 font-semibold">
+                  <span>UEK_Kompetenzen.pdf</span>
+                  <span className="text-brand-sage uppercase">Download</span>
                 </div>
               </a>
             </div>
           </div>
+
+        </div>
+      </div>
     </section>
   );
 }

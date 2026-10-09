@@ -48,8 +48,8 @@ export interface TranslationDictionary {
     btnVideo: string;
     videoSubtitle: string;
     modalTitle: string;
-    scriptLabel: string;
-    scriptText: string;
+    scriptLabel?: string;
+    scriptText?: string;
   };
   resume: {
     title: string;
@@ -181,10 +181,16 @@ export interface TranslationDictionary {
     gibbPass: string;
     downloadTitle: string;
     downloadDesc: string;
+    cvDownloadBtn?: string;
+    cvDownloadSub?: string;
+    workRefBtn?: string;
+    workRefSub?: string;
     bwdDownloadBtn: string;
     bwdDownloadSub: string;
     gibbDownloadBtn: string;
     gibbDownloadSub: string;
+    uekDownloadBtn?: string;
+    uekDownloadSub?: string;
     subjects: {
       deutsch: string;
       franz: string;
@@ -213,12 +219,12 @@ export interface TranslationDictionary {
     btnOutlook: string;
     btnOutlookDesc: string;
     badge: string;
-    desc: string;
+    desc?: string;
     directTitle: string;
     phoneSub: string;
     emailSub: string;
-    partnerTitle: string;
-    partnerDesc: string;
+    partnerTitle?: string;
+    partnerDesc?: string;
     mailAppLabel: string;
     mailAppSub: string;
     gmailLabel: string;
@@ -789,11 +795,17 @@ const translations: Record<Language, TranslationDictionary> = {
       gibbPass: 'Promoviert',
       downloadTitle: 'Offizielle Zeugnisse & Notenausweise zum Download',
       downloadDesc: 'Laden Sie die verifizierten PDF-Zeugnisdokumente der beiden Ausbildungsinstitutionen herunter.',
-      bwdDownloadBtn: 'bwd Zeugnis ',
+      cvDownloadBtn: 'Lebenslauf (CV)',
+      cvDownloadSub: 'Aktueller tabellarischer Lebenslauf mit Ausbildungs- & IT-Profil',
+      workRefBtn: 'Arbeitsbestätigung',
+      workRefSub: 'Jugend-Job-Börse Bern (Offizieller Leistungsnachweis)',
+      bwdDownloadBtn: 'bwd Zeugnis',
       bwdDownloadSub: 'Wirtschaft & Berufsmaturität (bwd Bern)',
       gibbDownloadBtn: 'gibb Zeugnis',
       gibbDownloadSub: 'Informatik-Modulnoten & ÜK-Nachweise (gibb Bern)',
-      subjects: {
+      uekDownloadBtn: 'ÜK-Kompetenzen',
+      uekDownloadSub: 'Überbetriebliche Kurse ICT-Berufsbildung & Zertifikate',
+     subjects: {
         deutsch: 'Deutsch',
         franz: 'Französisch',
         engl: 'Englisch',
@@ -1394,10 +1406,16 @@ const translations: Record<Language, TranslationDictionary> = {
       gibbPass: 'Promoted',
       downloadTitle: 'Official Transcripts & Report Cards for Download',
       downloadDesc: 'Download the verified PDF transcript documents from both academic institutions.',
-      bwdDownloadBtn: 'bwd Grades',
+      cvDownloadBtn: 'Resume / CV',
+      cvDownloadSub: 'Up-to-date curriculum vitae with academic & IT profile',
+      workRefBtn: 'Work Reference',
+      workRefSub: 'Jugend-Job-Börse Bern (Official Performance Record)',
+      bwdDownloadBtn: 'bwd Transcript',
       bwdDownloadSub: 'Economics & Vocational Baccalaureate (bwd Bern)',
-      gibbDownloadBtn: 'gibb Grades',
-      gibbDownloadSub: 'Vocational IT Modules & ÜK Certificates (gibb Bern)',
+      gibbDownloadBtn: 'gibb Transcript',
+      gibbDownloadSub: 'Computer Science modules & vocational reports (gibb Bern)',
+      uekDownloadBtn: 'ÜK Competencies',
+      uekDownloadSub: 'Intercompany ICT vocational training courses & certificates',
       subjects: {
         deutsch: 'German',
         franz: 'French',
