@@ -325,7 +325,7 @@ export default function Projects() {
                         </div>
                       </div>
                       <div className="text-[14px] font-mono text-center text-brand-wine/60">
-                        https://gitlab.com/Kitt26/projektwoche_dressify
+                        https://github.com/yayanadzhyma/Dressify
                       </div>
                     </div>
                   )}
