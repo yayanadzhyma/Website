@@ -27,9 +27,6 @@ export default function Imprint() {
             <p>
               Yana Dzhyma
             </p>
-            <p>
-              E-Mail: <span className="text-brand-beige select-all">ya.yana.dzhima@gmail.com</span>
-            </p>
           </div>
         </div>
 
